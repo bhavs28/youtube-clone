@@ -1,0 +1,158 @@
+.header{
+    display:flex;
+    flex-direction: row;
+    height: 55px;
+    justify-content: space-between;
+    position: fixed;
+    background-color: white;
+    top: 0;
+    left:0;
+    right: 0;
+    z-index: 100;
+    border-bottom: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(236, 236, 236);
+}
+.left{
+    
+    display: flex;
+    align-items: center;
+    
+}
+.middle{
+    display: flex;
+    flex:1;
+    max-width: 500px;
+    margin-left: 45px;
+    margin-right: 35px;
+    align-items: center;
+}
+.right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 180px;
+    flex-shrink: 0;
+}
+.menu{
+    height: 20px;
+    margin-right: 20px;
+    margin-left: 25px;
+}
+.menu:hover{
+    cursor: pointer;
+}
+.logo{
+    height: 16px;
+    margin-right: 40px;
+}
+.search-image{
+    height: 20px;
+
+    margin-right: 5px;
+    margin-top: 4px;
+}
+.button-search{
+    border-style: solid;
+    border-color:rgb(204,204 ,204); 
+    border-width: 1px;
+    border-left: none;
+    height: 33px;
+    width: 55px;
+}
+.voice-search-image{
+    height: 20px;
+    margin-top: 4px;
+}
+.button-voice-search{
+    border: none;
+    border-radius: 100%;
+    margin-left: 5px;
+    background-color: rgb(249, 249, 249);
+}
+.search-bar{
+    height: 30px;
+    width: 0;
+    flex: 1;
+    border-width: 1px;
+    border-color: rgb(204,204 ,204);
+    border-radius: 2px;
+    border-style: solid;
+    flex-shrink: 1;
+    font-size: 12px;
+    box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.01);
+    position: relative;
+    border: 1px solid #ccc;
+    outline:#ccc;
+   padding-left: 8px;
+   transition: border-color 0.3s ease;
+}
+.search-bar:focus {
+    border-color:navy /* Change this color to your desired light blue shade */
+}
+
+.search-bar-input{
+    padding-left: 5px;
+}
+
+.tooltip
+{
+    position: absolute;
+    background-color: gray;
+    color: white;
+    padding: 6px 8px;
+    font: Roboto,Arial;
+    font-size: 10px;
+    border-radius: 2px;
+    bottom: -30px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+    
+}
+
+.button-search:hover .tooltip ,
+.button-voice-search:hover .tooltip,
+.upload-icon-container:hover .tooltip,
+.youtube-apps-container:hover .tooltip,
+.notifications-container:hover .tooltip
+{
+    opacity: 1;
+    
+}
+.search-bar::placeholder{
+    color:rgb(155, 154, 154);
+    font-size: 14px;
+    font-family: Roboto,Arial;
+    font-weight: 400;
+}
+.button-search,
+.button-voice-search,
+.upload-icon-container,
+.notifications-container,
+.youtube-apps-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    font-family: Roboto;
+}
+.upload{
+    height: 20px;
+}
+.apps{
+    height: 20px;
+}
+.user{
+    height: 25px;
+    width: 25px;
+    border-radius: 100%;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.notify{
+    height: 20px;
+}
